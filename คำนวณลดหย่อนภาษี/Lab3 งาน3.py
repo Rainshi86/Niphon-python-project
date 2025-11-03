@@ -1,0 +1,26 @@
+#Lab3 งานที่3
+print("="*30)
+salary = int(input("กรุณาระบุเงินเดือน:"))
+money = salary*12
+dis_40 = money*40/100
+num_fa = int(input("กรุณาระบุจำนวนบิดาและมารดา:"))
+dis_fa = num_fa*30000
+num_child = int(input("กรุณาระบุจำนวนบุตร:"))
+dis_child = num_child*15000
+dis_do = int(input("กรุณาระบุจำนวนเงินบริจาค:"))
+total_dis = dis_40+dis_fa+dis_child+dis_do
+net = money-total_dis
+net_tax = net*15/100
+print("="*30)
+print("เงินเดือน =",salary,"บาท")
+print("เงินเดือนรายปี =",money,"บาท")
+print("ค่าใช้จ่าย =",dis_40,"บาท")
+print("จำนวนดิบาและมารดา =",num_fa,"คน")
+print("ค่าดลี้ยงดูบิดาและมารดา =",dis_fa,"บาท")
+print("จำนวนบุตร =",num_child,"คน")
+print("ค่าเลี้ยงดูบุตร =",dis_child,"บาท")
+print("ค่าบริจาค =",dis_do,"บาท")
+print("รวมหักค่าลดหย่อน =",total_dis,"บาท")
+print("รายได้สุทธิ =",net,"บาท")
+print("ค่าภาษี =",net_tax,"บาท")
+print("="*30,)
